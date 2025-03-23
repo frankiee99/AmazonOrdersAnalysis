@@ -4,10 +4,14 @@
 
 ### Tables:
 1. **Customers** (`customer_id`, `name`, `email`, `phone`, `address`, `registration_date`)
-2. **Products** (`product_id`, `name`, `category`, `price`, `stock_quantity`)
-3. **Orders** (`order_id`, `customer_id`, `order_date`, `total_amount`)
+2. **Products** (`product_id`, `name`, `category`, `price`, `stock_quantity`, `supplier_id`)
+3. **Orders** (`order_id`, `customer_id`, `order_date`, `total_amount`, `status`)
 4. **Order_Items** (`order_item_id`, `order_id`, `product_id`, `quantity`, `subtotal`)
-5. **Payments** (`payment_id`, `order_id`, `payment_method`, `payment_date`, `amount`)
+5. **Payments** (`payment_id`, `order_id`, `payment_method`, `payment_date`, `amount`, `status`)
+6. **Suppliers** (`supplier_id`, `name`, `contact_email`, `phone`, `address`)
+7. **Shipping** (`shipping_id`, `order_id`, `shipping_date`, `delivery_date`, `status`, `carrier`)
+8. **Reviews** (`review_id`, `customer_id`, `product_id`, `rating`, `review_text`, `review_date`)
+9. **Categories** (`category_id`, `category_name`, `description`)
 
 ## SQL Queries Overview
 
